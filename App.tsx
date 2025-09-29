@@ -66,13 +66,15 @@ export default function App() {
                         </div>
                     </header>
 
-                    <section className="flex justify-center items-center gap-4 my-8 animate-fade-in" style={{animationDelay: '100ms'}}>
+                    <section className="flex flex-col justify-center items-center gap-4 my-8 animate-fade-in" style={{animationDelay: '100ms'}}>
                         <span className="text-6xl" role="img" aria-label="Sparkles Icon">✨</span>
-                        <div className="flex flex-col items-center">
-                            <h1 className="text-4xl font-bold text-gray-800 dark:text-gray-100 tracking-wider text-center">
-                                Comet Template
-                            </h1>
-                        </div>
+                        <h1 className="text-4xl font-bold text-gray-800 dark:text-gray-100 tracking-wider text-center">
+                            Comet Template
+                        </h1>
+                        <p className="text-center text-gray-500 dark:text-gray-400 mt-2 max-w-md">
+                          This is a beautiful, animated welcome screen.
+                          Feel free to use it as a starting point for your next project.
+                        </p>
                     </section>
                     
                     <section className="flex flex-col gap-4 animate-fade-in" style={{animationDelay: '300ms'}}>
