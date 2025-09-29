@@ -67,7 +67,20 @@
         }
       }
       
+      .comet-container {
+        /* Light mode comet */
+        background: conic-gradient(from var(--angle),
+            #007bff 0deg,
+            #007bff 3deg, 
+            rgba(0, 123, 255, 0.7) 5deg,
+            transparent 18deg,
+            transparent 360deg
+          );
+        animation: rotate-comet 12s linear infinite;
+      }
+
       .dark .comet-container {
+        /* Dark mode comet */
         background: conic-gradient(from var(--angle),
             /* The comet: head -> tail -> transparent */
             #ffffff 0deg,
@@ -78,7 +91,6 @@
             /* The rest is transparent */
             transparent 360deg
           );
-        animation: rotate-comet 12s linear infinite;
       }
 
       /* Custom scrollbar for webkit browsers */
